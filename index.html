@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Notice - Pulsit Electronics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #1a2a6c;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .notice-box {
+            background: #f8f9fa;
+            border-left: 5px solid #1a2a6c;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .notice-box h2 {
+            color: #1a2a6c;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .notice-box h2 i {
+            margin-right: 10px;
+        }
+        
+        .maintenance-details {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .maintenance-details h3 {
+            color: #856404;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .maintenance-details h3 i {
+            margin-right: 10px;
+        }
+        
+        .date-time {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .date-time i {
+            color: #1a2a6c;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .impact {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .impact h3 {
+            color: #721c24;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .impact h3 i {
+            margin-right: 10px;
+        }
+        
+        .solution {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .solution h3 {
+            color: #0c5460;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .solution h3 i {
+            margin-right: 10px;
+        }
+        
+        .alternate-link {
+            display: block;
+            background: #1a2a6c;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .alternate-link:hover {
+            background: #0d1a4a;
+        }
+        
+        .contact-info {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            color: #155724;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-info h3 i {
+            margin-right: 10px;
+        }
+        
+        .phone-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a2a6c;
+            margin: 10px 0;
+        }
+        
+        .signature {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: right;
+        }
+        
+        .company-name {
+            font-weight: bold;
+            color: #1a2a6c;
+            font-size: 1.2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+            
+            .date-time {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .date-time i {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-tools"></i> Scheduled Maintenance Notice</h1>
+            <p>Important information regarding upcoming system maintenance</p>
+        </div>
+        
+        <div class="content">
+            <div class="notice-box">
+                <h2><i class="fas fa-info-circle"></i> Important Notice</h2>
+                <p>Please note that scheduled maintenance will be performed on our servers. We appreciate your understanding during this necessary update to our systems.</p>
+            </div>
+            
+            <div class="maintenance-details">
+                <h3><i class="fas fa-calendar-alt"></i> Maintenance Schedule</h3>
+                <div class="date-time">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <strong>Date:</strong> 21 November 2025<br>
+                        <strong>Time:</strong> 9:00 PM (CAT)
+                    </div>
+                </div>
+                <p>This maintenance is necessary to improve system performance and security.</p>
+            </div>
+            
+            <div class="impact">
+                <h3><i class="fas fa-exclamation-triangle"></i> Expected Impact</h3>
+                <p>No interruption to connectivity is expected on the webpage but <strong>MST mobile will be affected and not accessible</strong> for this period.</p>
+            </div>
+            
+            <div class="solution">
+                <h3><i class="fas fa-lightbulb"></i> Troubleshooting Steps</h3>
+                <p>Should you experience any connectivity issues, please:</p>
+                <ol>
+                    <li>Log out and then log back in to re-establish your connection</li>
+                    <li>If this reconnection is unsuccessful, please use the alternate webpage</li>
+                </ol>
+                
+                <a href="http://webpulsbu.mstrack.com" class="alternate-link">
+                    <i class="fas fa-link"></i> Alternate Webpage: http://webpulsbu.mstrack.com
+                </a>
+                <p><em>Note: This link will only be live from 9:00 PM CAT during the maintenance period.</em></p>
+            </div>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-headset"></i> Need Assistance?</h3>
+                <p>If you have any questions or need assistance, please do not hesitate to contact our call centre:</p>
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i> 010 476 2501
+                </div>
+                <p>Our support team is ready to help you with any concerns.</p>
+            </div>
+            
+            <div class="signature">
+                <p>Thank you in advance for your patience and understanding.</p>
+                <p class="company-name">Kind regards,<br>Pulsit Electronics</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple script to update the date dynamically if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            // You could update the maintenance date dynamically here if needed
+            // For example: document.getElementById('maintenanceDate').textContent = new Date().toLocaleDateString();
+            
+            // Add a subtle animation to the notice box
+            const noticeBox = document.querySelector('.notice-box');
+            noticeBox.style.transform = 'translateX(-10px)';
+            noticeBox.style.opacity = '0';
+            
+            setTimeout(() => {
+                noticeBox.style.transition = 'all 0.5s ease';
+                noticeBox.style.transform = 'translateX(0)';
+                noticeBox.style.opacity = '1';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
